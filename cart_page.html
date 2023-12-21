@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukhoverkhov Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="mobilefirst_2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="content-wrap">
+            <nav class="header-menu">
+                <div class="logo">
+                    <img src="images/taskbar.png" class="eup">
+                </div>
+
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="button-container">
+                    <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+					<button class="profile-button"><a href="log-in_page.html"><i class="fa-regular fa-user"></i></a></button>
+                    <button class="cart-button"><a href="cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                </div>
+
+                <div class="main-menu">
+                    <div id='menuIcons' class="main-menu_icons">
+                        <i id='iconOpen' class="fa-solid fa-bars"></i>
+                        <i id='iconClose' class="fa-solid fa-xmark hide"></i>
+                    </div>
+                    <ul id='mainMenu' class="menu-list hide">
+                        <li><a href="index.html">Shop</a></li>
+                        <li>Men</li>
+                        <li><a href="women_page.html">Women</a></li>
+                        <li>Combos</li>
+                        <li>Joggers</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+	
+	<div class="add-to-cart-button">
+       <div class="add_cart-text-1">
+			Home
+		</div>
+		<div class="add_cart-arrow">
+			<i class="fa-solid fa-arrow-right"></i>
+		</div>
+		<div class="add_cart-text-2">
+			Add To Cart
+		</div>
+    </div>
+	
+	<div class = "login-text">
+		<div class = "login-text-1">
+			Please fill in the fields below and click place order to complete your purchase!
+		</div>
+		<div class = "login-text-2">
+			Already registered? Please <span class="highlight">login here</span>
+		</div>
+	</div>
+	
+	<div class="cart-header"> 
+		<div class="header-menu-text">
+			<div class="header-menu-text-1">PRODUCT DETAILS</div>
+			<div class="header-menu-text-2">PRICE</div>
+			<div class="header-menu-text-3">QUANTITY</div>
+			<div class="header-menu-text-4">SHIPPING</div>
+			<div class="header-menu-text-5">SUBTOTAL</div>
+			<div class="header-menu-text-6">ACTION</div>
+		</div>
+	</div>
+	
+	<div class="cart-elements"> 
+		<div class="cart-img">
+			<div class="cart-elements-1"> 
+				<img src="images/cart_1.png" class="cart-img3">
+				<div class="cart-text">
+					<p class="cart-element1-text1">Print<br>Top</p>
+					<p class="cart-element1-text2">Color: Yellow</p>
+					<p class="cart-element1-text3">Size: M</p>
+				</div>
+				<div class="cart-info1">
+					<p class="cart-price1">$029.00</p>
+					<p class="cart-quantity1"><i class="fa-solid fa-minus"></i>1<i class="fa-solid fa-plus"></i></p>
+					<p class="cart-shipping1">FREE</p>
+					<p class="cart-subtotall">$029.00</p>
+					<p class="cart-action1"><i class="fa-solid fa-trash"></i></p>
+				</div>
+			</div>
+			<div class="cart-divider"></div>
+			<div class="cart-elements-2"> 
+				<img src="images/cart_2.png" class="cart-img3">
+				<div class="cart-text">
+					<p class="cart-element1-text1">Levender<br>Hoodie</p>
+					<p class="cart-element1-text2">Color: Levender</p>
+					<p class="cart-element1-text3">Size: XXL</p>
+				</div>
+				<div class="cart-info2">
+					<p class="cart-price2">$129.00</p>
+					<p class="cart-quantity2"><i class="fa-solid fa-minus"></i>2<i class="fa-solid fa-plus"></i></p>
+					<p class="cart-shipping2">FREE</p>
+					<p class="cart-subtotal2">$129.00</p>
+					<p class="cart-action2"><i class="fa-solid fa-trash"></i></p>
+				</div>	
+			</div>
+			<div class="cart-divider"></div>
+			<div class="cart-elements-3"> 
+				<img src="images/cart_3.png" class="cart-img3">
+				<div class="cart-text">
+					<p class="cart-element3-text1">Black<br>Sweatshirt</p>
+					<p class="cart-element3-text2">Color: Black</p>
+					<p class="cart-element3-text3">Size: XXL</p>
+				</div>
+				<div class="cart-info3">
+					<p class="cart-price3">$123.00</p>
+					<p class="cart-quantity3"><i class="fa-solid fa-minus"></i>2<i class="fa-solid fa-plus"></i></p>
+					<p class="cart-shipping3">$5.00</p>
+					<p class="cart-subtotal3">$123.00</p>
+					<p class="cart-action3"><i class="fa-solid fa-trash"></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "coupon-cart">
+		<div class="discount-code">Discount Codes</div>
+		<div class="coupon-text">Enter your coupon code if you have one</div>
+		<input type="text" class="coupon-input" placeholder="Coupon Code">
+	</div>
+	
+	<div class = "cost-cart">
+		<div class="subtotal">Sub Total $513.00</div>
+		<div class="shipping">Shipping $5.00</div>
+		<div class="grand-total">Grand Total $518.00</div>
+		<div class="divider"></div>
+		<button class="checkout-button">Proceed To Checkout</button>
+	</div>
+	
+	<div class="grey-end"> 
+		<div class = "grey">
+			<div class="grey-end-text"> 
+				<div class = "need-help">
+					<div class = "grey-text-1"> Need Help </div>
+					<div class = "grey-text-2"> Contact Us </div>
+					<div class = "grey-text-3"> Track Order </div>
+					<div class = "grey-text-4"> Returns & Refunds </div>
+					<div class = "grey-text-5"> FAQ's </div>
+					<div class = "grey-text-6"> Career </div>
+				</div>
+				<div class = "company">
+					<div class = "grey-text-7"> Company </div>
+					<div class = "grey-text-8"> About Us </div>
+					<div class = "grey-text-9"> euphoria Blog </div>
+					<div class = "grey-text-10"> euphoriastan </div>
+					<div class = "grey-text-11"> Collaboration </div>
+					<div class = "grey-text-12"> Media </div>
+				</div>
+				<div class = "more-info">
+					<div class = "grey-text-13"> More Info </div>
+					<div class = "grey-text-14"> Term and Conditions </div>
+					<div class = "grey-text-15"> Privacy Policy </div>
+					<div class = "grey-text-16"> Shipping Policy </div>
+					<div class = "grey-text-17"> Sitemap </div>
+				</div>
+				<div class = "location">
+					<div class = "grey-text-18"> Location </div>
+					<div class = "grey-text-19"> support@euphoria.in </div>
+					<div class = "grey-text-20"> Eklingpura Chouraha, <br>Ahmedabad Main Road </div>
+					<div class = "grey-text-21"> (NH 8- Near Mahadev Hotel) Udaipur, <br>India- 31302 </div>
+				</div>
+			</div>
+		<div class = "app">
+			<div class = "grey-text-22"> Download The App </div>
+			<img src="images/google.png" class="grey-picture-1">
+			<img src="images/iphone.png" class="grey-picture-2">
+		</div>
+			<img src="images/soc-media.png" class="grey-picture-3"> 
+			<div class = "grey-text-23"> Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.  </div>
+		</div>
+	</div>
+	
+	<script src='scripts/swiper_up_sukhoverkhov.js'></script>
+	<script src='scripts/script_sukhoverkhov.js'></script>
+</body>
+</html>
